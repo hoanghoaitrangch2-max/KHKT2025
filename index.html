@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Muscles and Bones Anatomy Body Animation - 3D Model</title>
+  <title>Human Digestive System - 3D Model</title>
 
   <style>
     html, body {
@@ -33,8 +33,8 @@
       left: 0;
       width: 100vw;
       height: 100dvh;
-      z-index: 1;
       background: transparent;
+      z-index: 1;
     }
 
     iframe {
@@ -45,9 +45,10 @@
       height: 100dvh;
       border: none;
       background: transparent;
+      display: block;
     }
 
-    /* ⭐ LOGO BUTTON STYLE (dùng chung) */
+    /* 🎯 Button base style */
     .btn-logo {
       width: 55px;
       height: 55px;
@@ -62,83 +63,72 @@
     .btn-logo img {
       width: 100%;
       height: 100%;
+      background: #ffffff;
       border-radius: 12px;
-      background: white;
     }
 
     .btn-logo:hover {
       transform: scale(1.1);
     }
 
+    .wayground-logo { left: 15px; }
+    .youtube-logo { left: 50%; transform: translateX(-50%); }
     .wiki-logo { right: 15px; border-radius: 50%; }
     .wiki-logo img { border-radius: 50%; }
-
-    .wayground-logo { left: 15px; }
-
-    .youtube-logo { left: 50%; transform: translateX(-50%); border-radius: 12px; }
-
-    .youtube-logo img { border-radius: 12px; background: #ffffff; }
   </style>
 </head>
 
 <body>
-
-  <!-- ⭐ NHÚNG MÔ HÌNH -->
+  <!-- ⭐ 3D Model -->
   <div class="sketchfab-embed-wrapper">
-    <iframe id="api-frame" title="Muscles and Bones Anatomy body Animation" frameborder="0"
+    <iframe id="api-frame" title="Human Digestive System" frameborder="0"
       allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
       allow="autoplay; fullscreen; xr-spatial-tracking; execution-while-out-of-viewport; execution-while-not-rendered; web-share"
-      src="https://sketchfab.com/models/db7be21587804a32ab3a99e165c56e19/embed?autostart=1&transparent=1&camera=0&ui_hint=0&ui_controls=1&ui_infos=0">
+      src="https://sketchfab.com/models/6d7bec2eac7b4c34abc6078ddd2170f2/embed?autostart=1&transparent=1&camera=0&ui_hint=0&ui_controls=1&ui_infos=0">
     </iframe>
 
     <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-      <a href="https://sketchfab.com/3d-models/muscles-and-bones-anatomy-body-animation-db7be21587804a32ab3a99e165c56e19"
-        target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">
-        Muscles and Bones Anatomy Body Animation
-      </a> by
-      <a href="https://sketchfab.com/flarar" target="_blank" rel="nofollow"
-        style="font-weight: bold; color: #1CAAD9;">flarar-01</a> on
+      <a href="https://sketchfab.com/3d-models/human-digestive-system-6d7bec2eac7b4c34abc6078ddd2170f2"
+        target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Human Digestive System</a> by
+      <a href="https://sketchfab.com/Devden" target="_blank" rel="nofollow"
+        style="font-weight: bold; color: #1CAAD9;">Devden</a> on
       <a href="https://sketchfab.com" target="_blank" rel="nofollow"
         style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
     </p>
   </div>
 
-  <!-- ⭐ Logo Wikipedia -->
-  <a class="btn-logo wiki-logo" href="https://vi.wikipedia.org/wiki/H%E1%BB%87_v%E1%BA%ADn_%C4%91%E1%BB%99ng" target="_blank">
+  <!-- ⭐ WayGround -->
+  <a class="btn-logo wayground-logo" href="https://wayground.com/join?gc=519599" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="WayGround">
+  </a>
+
+  <!-- ⭐ YouTube -->
+  <a class="btn-logo youtube-logo" href="https://www.youtube.com/watch?v=d9CVTk9NivA" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube">
+  </a>
+
+  <!-- ⭐ Wikipedia -->
+  <a class="btn-logo wiki-logo" href="https://vi.wikipedia.org/wiki/H%E1%BB%87_ti%C3%AAu_h%C3%B3a_ng%C6%B0%E1%BB%9Di" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia">
-  </a>
-
-  <!-- ⭐ Logo WayGround (⭐ Ngôi sao) -->
-  <a class="btn-logo wayground-logo" href="https://wayground.com/join?gc=955896" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="WayGround Link">
-  </a>
-
-  <!-- ⭐ Logo YouTube (📺 Video giải phẫu) -->
-  <a class="btn-logo youtube-logo" href="https://www.youtube.com/watch?v=-yjeBtnXtFs&t=42s" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Video">
   </a>
 
   <!-- ⭐ Sketchfab API -->
   <script src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"></script>
   <script>
     const iframe = document.getElementById('api-frame');
-    const uid = 'db7be21587804a32ab3a99e165c56e19';
+    const uid = '6d7bec2eac7b4c34abc6078ddd2170f2';
 
     const client = new Sketchfab(iframe);
-
     client.init(uid, {
-      success: function (api) {
+      success: function(api) {
         api.start();
-        api.addEventListener('viewerready', function () {
-          console.log('✅ 3D model ready!');
+        api.addEventListener('viewerready', function() {
+          console.log('✅ Digestive System model ready!');
           api.setBackground({ color: [1, 1, 1], transparency: 0 });
         });
       },
-      error: function () {
-        console.error('❌ Sketchfab API initialization error');
-      }
+      error: function() { console.error('❌ Sketchfab API initialization error'); }
     });
   </script>
-
 </body>
 </html>
